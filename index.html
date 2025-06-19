@@ -4,10 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>James Cheriyan - AI Resume Assistant</title>
-  <script
-    type="module"
-    src="https://gradio.s3-us-west-2.amazonaws.com/5.34.0/gradio.js"
-  ></script>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,7 +44,7 @@
       font-size: 1rem;
     }
 
-    gradio-app {
+    iframe {
       width: 100%;
       height: 700px;
       border: none;
@@ -60,7 +56,7 @@
         padding: 1rem;
       }
 
-      gradio-app {
+      iframe {
         height: 650px;
       }
     }
@@ -72,9 +68,13 @@
     <img src="1-3RBG.jpg" alt="James Cheriyan" class="profile-image" />
     <h1>James Cheriyan</h1>
     <p class="subtitle">Technical Support Specialist | AI-Powered Resume Assistant</p>
-    hi
-    <!-- Embedded Gradio App -->
-    <gradio-app src="https://jc047-jc-ai-assistant.hf.space"></gradio-app>
+
+    <!-- Embedded Streamlit App -->
+    <iframe 
+      src="https://james-ai-assistant.streamlit.app/?embed_options=show_footer" 
+      title="AI Resume Assistant"
+      allowfullscreen
+    ></iframe>
   </div>
 
 </body>
