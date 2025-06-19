@@ -6,20 +6,20 @@
   <title>James Cheriyan - AI Resume Assistant</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f6f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7ff, #ffffff);
       color: #333;
     }
 
     .container {
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 3rem auto;
       padding: 2rem;
       background: #ffffff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
       text-align: center;
     }
 
@@ -28,26 +28,47 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
       margin-bottom: 1rem;
     }
 
     h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
       color: #2c3e50;
     }
 
     p.subtitle {
       margin: 0.5rem 0 2rem;
       color: #555;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
-    iframe {
-      width: 100%;
-      height: 700px;
+    .launch-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background-color: #0077cc;
+      color: white;
+      padding: 14px 26px;
       border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(0, 119, 204, 0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .launch-button:hover {
+      background-color: #005fa3;
+    }
+
+    .launch-button img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     @media (max-width: 600px) {
@@ -56,8 +77,18 @@
         padding: 1rem;
       }
 
-      iframe {
-        height: 650px;
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .launch-button {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+      }
+
+      .launch-button img {
+        width: 32px;
+        height: 32px;
       }
     }
   </style>
@@ -69,20 +100,11 @@
     <h1>James Cheriyan</h1>
     <p class="subtitle">Technical Support Specialist | AI-Powered Resume Assistant</p>
 
-    <!-- Embedded Streamlit App -->
-    <a href="https://james-ai-assistant.streamlit.app/" target="_blank">
-    <button style="
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    ">
-    🚀 Launch AI Resume Assistant
-  </button>
-</a>
+    <!-- Launch Button with Image and CTA -->
+    <a href="https://james-ai-assistant.streamlit.app/" target="_blank" class="launch-button">
+      <img src="1-3RBG.jpg" alt="James Avatar" />
+      💬 Talk to James AI
+    </a>
   </div>
 
 </body>
